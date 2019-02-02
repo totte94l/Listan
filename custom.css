@@ -1,0 +1,77 @@
+html {
+    font-family: 'Raleway', sans-serif;
+}
+.container h4 {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background: rgb(146, 202, 255);
+    border-radius: 3px;
+ 
+    padding: 10px;
+    margin-top: 20px;
+    color: rgb(68, 68, 68);
+}
+
+#list {
+    list-style: none;
+    padding: 10px;
+}
+
+#list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+#list li:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+#list li i {
+    color: rgb(255, 104, 104);
+    display: flex;
+}
+
+#list li i:hover {
+    cursor: pointer;
+}
+
+#error {
+    background: rgb(255, 160, 160);
+
+}
+
+#info {
+    background: rgb(120, 166, 250);
+    color: white;
+
+}
+
+.alert {
+    margin-top: 20px;
+    border-radius: 3px;
+    padding: 10px;
+
+    display: none;
+}
+
+.alert hr {
+
+	background-color: white; height: 1px; border: 0;
+}
+
+
+
+
+#clear {
+    color: rgb(255, 104, 104);
+}
+
+#clear:hover {
+    cursor: pointer;
+}
