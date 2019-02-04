@@ -93,7 +93,6 @@ $(function() {
 
     // Sortering
     sortList.on("click", "option", function() {
-        tempArray = listArray;
         switch ($(this).val()) {
             case 'letters': 
                 // Enkel inbyggd sortering efter alfabetet (0-9 a-ö)

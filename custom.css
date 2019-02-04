@@ -1,13 +1,47 @@
 html {
     font-family: 'Raleway', sans-serif;
+    height: 100%;
 }
+
+body {
+    background: url(bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: grid;
+    min-height: 100%;
+}
+
+.wrapper {
+    width: 800px;
+    justify-self: center;
+    align-self: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 3px;
+    min-height: 300px;
+
+    -webkit-box-shadow: 0px 4px 24px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 24px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 24px 3px rgba(0,0,0,0.75);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.container {
+    padding: 5px;
+}
+
 .container h4 {
     margin: 0;
     padding: 0;
 }
 
 #container {
-    background: rgb(146, 202, 255);
+    background: rgba(199, 199, 199, 0.3);
     border-radius: 3px;
  
     padding: 10px;
@@ -24,6 +58,7 @@ html {
     display: flex;
     justify-content: space-between;
     padding: 2px;
+    border-bottom: 1px solid rgba(231, 231, 231, 0.1);
 }
 
 #list li:hover {
@@ -35,6 +70,7 @@ html {
 #list li i {
     color: rgb(255, 104, 104);
     display: flex;
+
 }
 
 #list li i:hover {
@@ -58,6 +94,8 @@ html {
     padding: 10px;
 
     display: none;
+    max-height: 50px;
+    position: absolute;
 }
 
 .alert hr {
@@ -65,13 +103,33 @@ html {
 	background-color: white; height: 1px; border: 0;
 }
 
-
-
-
 #clear {
     color: rgb(255, 104, 104);
+    justify-content: left;
 }
 
 #clear:hover {
     cursor: pointer;
+}
+
+#inpButton {
+    background: none;
+    border: 1px solid rgba(224, 224, 224, 0.3);
+    border-radius: 1px;
+    padding: 2px;
+}
+
+input[type="text"] {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+
+}
+
+.list-item span {
+    color: white;
+}
+
+#operations {
+    display: grid;
+
 }
